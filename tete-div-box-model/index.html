@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Ramalhete</title>
+    <style>
+        .card {
+            background-color: aliceblue;
+            margin: 20px;
+            text-align: center;
+            display: flex;
+        }
+
+        .container {
+            background-color: rgb(252, 246, 249);
+            /*   border: 1px solid black;*/
+            width: 300px;
+            height: 350px;
+            border-radius: 15px;
+            margin-top: 5%;
+            margin-bottom: 20px;
+            font-weight: bold;
+            margin-right: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.9s;
+            width: 30%;
+        }
+
+        .container:hover {
+            background-color: aliceblue;
+        }
+
+        #oferta {
+            color: red;
+            text-decoration: underline;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: -20px;
+        }
+
+        #fundo {
+            background-image: url("img/fundo.jpg");
+        }
+
+        div img {
+            width: 300px;
+            height: 200px;
+        }
+
+        span {
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fundo">
+        <span>
+            <h1>Bouquês</h1>
+        </span>
+        <div class="card">
+
+            <div class="container">
+                <h1> <span>Rosa</span> Vermelha</h1>
+                <img src="img/rosa_vermelha.jpg" alt="rosa_vermelha">
+                <p>R$ 200,00</p>
+                <p id="oferta">Oferta</p>
+            </div>
+
+            <div class="container">
+                <h1>Rosa Amarela</h1>
+                <img src="img/rosa_amarela.jpg" alt="">
+                <p>R$ 300,00</p>
+            </div>
+
+
+            <div class="container">
+                <h1>Rosa Azul</h1>
+                <img src="img/rosa_azul.jpg" alt="rosa_azul">
+                <p>R$ 300,00</p>
+            </div>
+
+            <div class="container" id="small">
+                <h1>Rosa Floral</h1>
+                <img src="img/bouque_rosas.jpg" alt="bouque_rosas">
+                <p>R$ 300,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
